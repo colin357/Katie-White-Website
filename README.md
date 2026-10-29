@@ -33,14 +33,13 @@ Or for static-only (no contact API): `python3 -m http.server`.
 
 ## Before launch: replace placeholders
 
-Search `index.html` for these:
+Done: Katie's NMLS #848270, Fairway Independent Mortgage Corporation NMLS #2289, phone and email.
 
-- `NMLS #000000`: Katie's individual NMLS ID and the company's NMLS ID
-- `Company Name`: the lender she's with (add the branch office address to the footer if required)
-- `(555) 555-5555` / `tel:+15555555555`: her business phone
-- `katie@example.com`: her business email
+Still open:
+
 - Optional: an online application link for the "Start my pre-approval" buttons (they currently scroll to the contact form)
-- Have the lender's compliance team review the disclosures and loan program copy
+- Fairway compliance review of the disclosures and loan program copy (they may require specific footer language or a branch address)
+- Set `CONTACT_TO_EMAIL=katie.white@fairwaymc.com` in Vercel so form leads reach her
 
 Content comes from Katie's onboarding answers: Austin-based branch manager, licensed in TX, MN, WI, FL and CA; her audience, specialties, client pain points and voice.
 The "What I want every client to say" section uses her own standards, written as goals rather than attributed reviews.

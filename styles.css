@@ -63,7 +63,7 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 .eyebrow--light { color: rgba(245, 239, 228, 0.7); }
 .dot {
-  width: 8px; height: 8px; border-radius: 50%; background: #3dbb6c;
+  flex: none; width: 8px; height: 8px; border-radius: 50%; background: #3dbb6c;
   box-shadow: 0 0 0 4px rgba(61, 187, 108, 0.2);
   animation: pulse 2.4s infinite;
 }
