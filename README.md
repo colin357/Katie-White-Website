@@ -35,10 +35,14 @@ Or for static-only (no contact API): `python3 -m http.server`.
 
 Search `index.html` for these:
 
-- `NMLS #000000` (Katie's NMLS ID and the company's NMLS ID)
-- `Company Name` and the office address in the footer
-- `(555) 555-5555` / `tel:+15555555555`
-- `katie@example.com`
-- Stats in the hero (500+ families, 21 days, 5.0 rating) and the testimonials: replace with real, verifiable figures and reviews
-- Portrait: drop a photo at `assets/katie.jpg` and swap the `.portrait` block for the commented `<img>` tag
+- `NMLS #000000`: Katie's individual NMLS ID and the company's NMLS ID
+- `Company Name`: the lender she's with (add the branch office address to the footer if required)
+- `(555) 555-5555` / `tel:+15555555555`: her business phone
+- `katie@example.com`: her business email
+- Optional: an online application link for the "Start my pre-approval" buttons (they currently scroll to the contact form)
 - Have the lender's compliance team review the disclosures and loan program copy
+
+Content comes from Katie's onboarding answers: Austin-based branch manager, licensed in TX, MN, WI, FL and CA; her audience, specialties, client pain points and voice.
+The "What I want every client to say" section uses her own standards, written as goals rather than attributed reviews.
+Once she has real client reviews (Google, Zillow, Experience.com), they can replace or sit alongside it.
+Her home shipping address from the intake form is deliberately left off the site.

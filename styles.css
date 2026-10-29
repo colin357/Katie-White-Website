@@ -228,7 +228,7 @@ button, input, textarea { font: inherit; color: inherit; }
   flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
   background: var(--bg, var(--accent)); color: #fff; font-size: 13px; font-weight: 600;
 }
-.avatar--sm { width: 36px; height: 36px; color: var(--ink); font-size: 12px; }
+img.avatar { object-fit: cover; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 120px; }
@@ -253,8 +253,13 @@ button, input, textarea { font: inherit; color: inherit; }
     var(--butter);
   display: grid; place-items: center; overflow: hidden;
 }
-.about__portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 240px 240px var(--radius) var(--radius); }
-.portrait__initials { font: italic 300 clamp(120px, 18vw, 220px)/1 var(--serif); color: var(--forest); opacity: 0.85; }
+.portrait picture, .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.portrait img { object-fit: cover; object-position: 50% 15%; }
+.portrait::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(29, 59, 47, 0.25), transparent 35%);
+}
+.portrait__tag { z-index: 1; }
 .portrait__tag {
   position: absolute; bottom: 24px; left: 24px;
   background: var(--paper); padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: 15px;
@@ -269,6 +274,22 @@ button, input, textarea { font: inherit; color: inherit; }
   .about__portrait { max-width: 420px; }
   .values { grid-template-columns: 1fr; }
 }
+
+/* ---------- Who I help ---------- */
+.who { padding-top: 0; }
+.lede { font-size: 18px; color: var(--ink-2); max-width: 600px; }
+.who__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.who__card {
+  padding: 28px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--paper);
+  display: flex; flex-direction: column; transition: background 0.4s var(--ease), color 0.4s;
+}
+.who__card:hover { background: var(--forest); color: var(--cream); }
+.who__card:hover p { color: rgba(245, 239, 228, 0.75); }
+.who__num { font: italic 300 36px/1 var(--serif); color: var(--accent); margin-bottom: 40px; }
+.who__card h3 { font: 400 26px/1.15 var(--serif); margin-bottom: 12px; letter-spacing: -0.01em; }
+.who__card p { color: var(--ink-2); font-size: 15px; margin: 0; transition: color 0.4s; }
+@media (max-width: 1100px) { .who__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .who__grid { grid-template-columns: 1fr; } .who__num { margin-bottom: 20px; } }
 
 /* ---------- Process ---------- */
 .section--dark { background: var(--forest); color: var(--cream); border-radius: clamp(28px, 4vw, 56px); margin: 0 clamp(8px, 1.2vw, 16px); }
@@ -378,7 +399,8 @@ input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius
   display: flex; flex-direction: column; justify-content: space-between; gap: 28px;
 }
 .quote blockquote { margin: 0; font: 400 clamp(20px, 1.8vw, 24px)/1.35 var(--serif); letter-spacing: -0.01em; }
-.quote figcaption { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--ink-2); }
+.quote figcaption { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+.quote figcaption::before { content: ""; display: block; width: 32px; height: 2px; background: var(--accent); margin-bottom: 12px; }
 .quote--tall { grid-row: span 2; background: var(--butter); border-color: transparent; }
 .quote--tall blockquote { font-size: clamp(24px, 2.4vw, 32px); }
 .love__grid .quote:nth-child(4) { grid-column: 1 / span 2; }
