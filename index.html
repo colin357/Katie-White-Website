@@ -3,456 +3,344 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Katie White — Mortgage Loan Officer</title>
-  <meta name="description" content="Katie White is an Austin, TX branch manager and mortgage loan officer helping first-time buyers, families, entrepreneurs and investors buy, build or refinance with confidence. Licensed in TX, MN, WI, FL and CA.">
-  <meta name="theme-color" content="#f5efe4">
-  <meta property="og:title" content="Katie White — Mortgage Loan Officer">
-  <meta property="og:description" content="Home loans, made human. Clear plans and honest advice from an Austin loan officer who's with you every step of the way.">
+  <title>Katie White | Mortgage Loan Officer in Austin, TX</title>
+  <meta name="description" content="Katie White is a branch manager and mortgage loan officer with Fairway Independent Mortgage in Austin, TX, helping buyers and homeowners in TX, MN, WI, FL and CA. NMLS #848270.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Katie White | Mortgage Loan Officer in Austin, TX">
+  <meta property="og:description" content="Know your numbers before you fall in love with a house. Pre-approvals, purchase loans and refinancing with Katie White.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/assets/katie-og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="/assets/katie-sm.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/katie.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="nav" data-nav>
-    <a href="#top" class="nav__brand" aria-label="Katie White, home">
-      <span class="nav__mark">kw</span>
-      <span>Katie White</span>
-    </a>
-    <nav class="nav__links" aria-label="Primary">
+  <header class="top" data-nav>
+    <div class="top__inner">
+      <a href="#top" class="top__name">Katie White</a>
+      <nav class="top__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#loans">Loans</a>
+        <a href="#process">Process</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="tel:+15129227602" class="top__phone">512-922-7602</a>
+      <button class="top__toggle" aria-label="Open menu" aria-expanded="false" data-menu-toggle>Menu</button>
+    </div>
+    <nav class="menu" data-menu hidden aria-label="Mobile">
       <a href="#about">About</a>
-      <a href="#who">Who I help</a>
-      <a href="#process">Process</a>
       <a href="#loans">Loans</a>
+      <a href="#process">Process</a>
       <a href="#calculator">Calculator</a>
       <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+15129227602">Call 512-922-7602</a>
     </nav>
-    <a href="#contact" class="btn btn--dark btn--sm">Get pre-approved</a>
-    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
-      <span></span><span></span>
-    </button>
   </header>
-
-  <div class="menu" data-menu hidden>
-    <a href="#about">About</a>
-    <a href="#who">Who I help</a>
-    <a href="#process">Process</a>
-    <a href="#loans">Loans</a>
-    <a href="#calculator">Calculator</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-  </div>
 
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
-      <div class="hero__copy">
-        <p class="eyebrow reveal"><span class="dot"></span> Branch Manager &amp; Loan Officer · Austin, TX · NMLS #848270</p>
-        <h1 class="hero__title reveal">
-          Home loans,<br>
-          <em>made human.</em>
-        </h1>
-        <p class="hero__lede reveal">
-          I'm Katie. Buying a home is one of the biggest financial decisions
-          you'll ever make — I'm here to make it feel clear, not overwhelming.
-          You'll get a real plan, honest answers and someone in your corner
-          from the first question to the closing table.
+      <div class="hero__text">
+        <h1>Know your numbers before you fall in love with a house.</h1>
+        <p class="hero__lede">
+          I'm Katie White, a loan officer and branch manager at Fairway in Austin.
+          I'll show you what you qualify for, what it will really cost each month,
+          and which loan fits your family. Then I'll stay with you until you have the keys.
         </p>
-        <div class="hero__ctas reveal">
-          <a href="#contact" class="btn btn--accent">Start my pre-approval <span aria-hidden="true">→</span></a>
-          <a href="#calculator" class="btn btn--ghost">Estimate a payment</a>
-        </div>
-        <ul class="hero__stats reveal" aria-label="Highlights">
-          <li><strong data-count="5">5</strong><span>states licensed</span></li>
-          <li><strong>ATX</strong><span>home base</span></li>
-          <li><strong>1:1</strong><span>direct line to me</span></li>
-        </ul>
-      </div>
-
-      <!-- Wallet-style card stack -->
-      <div class="hero__visual" aria-hidden="true">
-        <div class="stack" data-tilt>
-          <div class="card card--status">
-            <div class="card__row">
-              <span class="chip chip--ok">Pre-approved</span>
-              <span class="muted">Today, 9:41</span>
-            </div>
-            <p class="card__label">Approved up to</p>
-            <p class="card__big">$485,000</p>
-            <div class="progress"><span style="--p: 72%"></span></div>
-            <ol class="steps-mini">
-              <li class="done">Application</li>
-              <li class="done">Documents</li>
-              <li class="active">Underwriting</li>
-              <li>Closing</li>
-            </ol>
-          </div>
-          <div class="card card--payment">
-            <p class="card__label">Est. monthly payment</p>
-            <p class="card__big">$2,418<small>/mo</small></p>
-            <div class="bars">
-              <span style="--h: 62%" title="Principal &amp; interest"></span>
-              <span style="--h: 22%"></span>
-              <span style="--h: 10%"></span>
-              <span style="--h: 6%"></span>
-            </div>
-          </div>
-          <div class="card card--note">
-            <img class="avatar" src="/assets/katie-avatar.jpg" alt="" width="40" height="40">
-            <p>“Appraisal came back great — you're clear to close Friday! 🎉”</p>
-          </div>
-          <div class="card card--key">
-            <svg viewBox="0 0 48 48" width="40" height="40"><circle cx="16" cy="24" r="9" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M25 24h18M37 24v7M43 24v5" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg>
-            <span>Keys in hand</span>
-          </div>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary">Start my pre-approval</a>
+          <a href="#calculator" class="btn btn--line">Estimate a payment</a>
         </div>
       </div>
+      <figure class="hero__photo">
+        <picture>
+          <source type="image/webp" srcset="/assets/katie-sm.webp 700w, /assets/katie.webp 1200w" sizes="(max-width: 860px) 100vw, 44vw">
+          <img src="/assets/katie.jpg" srcset="/assets/katie-sm.jpg 700w, /assets/katie.jpg 1200w" sizes="(max-width: 860px) 100vw, 44vw" alt="Portrait of Katie White" width="1200" height="1500" fetchpriority="high">
+        </picture>
+        <figcaption>Katie White, Branch Manager<br>Fairway Independent Mortgage</figcaption>
+      </figure>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>First-time buyers</span><i>✦</i><span>FHA</span><i>✦</i><span>VA</span><i>✦</i><span>Refinancing</span><i>✦</i><span>Investment properties</span><i>✦</i><span>New construction</span><i>✦</i><span>Relocation</span><i>✦</i><span>Downsizing</span><i>✦</i><span>Luxury homes</span><i>✦</i>
-        <span>First-time buyers</span><i>✦</i><span>FHA</span><i>✦</i><span>VA</span><i>✦</i><span>Refinancing</span><i>✦</i><span>Investment properties</span><i>✦</i><span>New construction</span><i>✦</i><span>Relocation</span><i>✦</i><span>Downsizing</span><i>✦</i><span>Luxury homes</span><i>✦</i>
-      </div>
-    </div>
+    <figure class="band">
+        <picture>
+          <source type="image/webp" srcset="/assets/austin-sm.webp 900w, /assets/austin.webp 2000w" sizes="100vw">
+          <img class="band__img" src="/assets/austin-sm.jpg" srcset="/assets/austin-sm.jpg 900w, /assets/austin.jpg 2000w" sizes="100vw" alt="Downtown Austin skyline seen across Lady Bird Lake" width="2000" height="857" loading="lazy" decoding="async">
+        </picture>
+      <figcaption>Austin, Texas</figcaption>
+    </figure>
 
     <!-- ABOUT -->
-    <section class="about section" id="about">
-      <div class="about__portrait reveal">
-        <div class="portrait">
-          <picture>
-            <source type="image/webp" srcset="/assets/katie-sm.webp 700w, /assets/katie.webp 1200w" sizes="(max-width: 900px) 90vw, 520px">
-            <img src="/assets/katie-sm.jpg" srcset="/assets/katie-sm.jpg 700w, /assets/katie.jpg 1200w" sizes="(max-width: 900px) 90vw, 520px" alt="Katie White, mortgage loan officer" width="700" height="875">
-          </picture>
-          <span class="portrait__tag">Hi, I'm Katie 👋</span>
+    <section class="block" id="about">
+      <h2 class="block__label">About</h2>
+      <div class="block__body">
+        <p class="statement">
+          Most people come to me a little overwhelmed. Do I qualify? Is my credit good enough?
+          How much do I need saved? Am I making the right call? Those are good questions, and
+          you should get straight answers to them.
+        </p>
+        <div class="cols">
+          <p>
+            I run a small team out of Austin, and I'm licensed to lend in Texas, Minnesota,
+            Wisconsin, Florida and California. Most of my clients are busy. They're running
+            businesses, raising kids, or early in their careers, and they want someone who
+            will simplify the process and keep them informed.
+          </p>
+          <p>
+            My approach is pretty simple. We build a clear plan, I explain your options so you
+            can choose with confidence, and when a file gets complicated I find a way through it.
+            A home is one of the best tools families have for building long-term wealth, and
+            I want you to go into it knowing exactly what you're signing.
+          </p>
         </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Austin, TX</dd></div>
+          <div><dt>Licensed in</dt><dd>TX, MN, WI, FL, CA</dd></div>
+          <div><dt>Role</dt><dd>Branch Manager &amp; Loan Officer</dd></div>
+          <div><dt>NMLS</dt><dd>#848270</dd></div>
+        </dl>
       </div>
-      <div class="about__copy">
-        <p class="eyebrow reveal">About</p>
-        <h2 class="h2 reveal">A mortgage is a big number. <em>It shouldn't feel like a black box.</em></h2>
-        <p class="reveal">
-          Most people come to me a little overwhelmed. Do I qualify? Is my
-          credit good enough? How much do I actually need? Am I making the
-          right call? Those are exactly the right questions — and you deserve
-          clear answers to them.
-        </p>
-        <p class="reveal">
-          I'm a branch manager and loan officer based in Austin, licensed in
-          Texas, Minnesota, Wisconsin, Florida and California. My approach is
-          simple: build a clear plan, teach you your options, and find a
-          solution — even when the situation is complicated. Because a home
-          isn't just a loan. It's how families build long-term wealth.
-        </p>
-        <ul class="values reveal">
-          <li><strong>Educate</strong><span>Every option, fee and rate explained in plain English.</span></li>
-          <li><strong>Solve</strong><span>Creative, strategic solutions for complex situations.</span></li>
-          <li><strong>Show up</strong><span>Responsive, honest and with you every step.</span></li>
+    </section>
+
+    <!-- WHO -->
+    <section class="block" id="who">
+      <h2 class="block__label">Who I work with</h2>
+      <div class="block__body">
+        <ul class="who">
+          <li>
+            <h3>Entrepreneurs and business owners</h3>
+            <p>Self-employed income takes different paperwork. I know what underwriters look for and which programs work best when your pay doesn't come on a W-2.</p>
+          </li>
+          <li>
+            <h3>Parents and growing families</h3>
+            <p>More bedrooms, a specific school zone, or a move to another state. We'll plan the loan around your family's timeline.</p>
+          </li>
+          <li>
+            <h3>Young professionals</h3>
+            <p>If you're ready to stop renting, we'll work out what you can afford, how much you need saved and what to do first.</p>
+          </li>
+          <li>
+            <h3>Investors and move-up buyers</h3>
+            <p>Rental properties, downsizing, building new or buying at the high end. Financing that fits the bigger plan.</p>
+          </li>
         </ul>
       </div>
     </section>
 
-    <!-- WHO I HELP -->
-    <section class="who section" id="who">
-      <div class="section__head">
-        <p class="eyebrow reveal">Who I help</p>
-        <h2 class="h2 reveal">Busy lives, <em>big goals.</em></h2>
-        <p class="lede reveal">My clients are juggling careers, families and financial goals. They need someone they can trust to simplify the process and guide them through it.</p>
-      </div>
-      <div class="who__grid">
-        <article class="who__card reveal">
-          <span class="who__num">01</span>
-          <h3>Entrepreneurs &amp; business owners</h3>
-          <p>Self-employed income, write-offs and non-traditional pay stubs — I know how to document it and which programs fit.</p>
-        </article>
-        <article class="who__card reveal">
-          <span class="who__num">02</span>
-          <h3>Parents &amp; growing families</h3>
-          <p>More space, the right school zone, or a move across the country. We'll plan around your family's timeline.</p>
-        </article>
-        <article class="who__card reveal">
-          <span class="who__num">03</span>
-          <h3>Young professionals</h3>
-          <p>Ready to stop renting? Let's map out what you can afford, what you'll need saved and how to get there.</p>
-        </article>
-        <article class="who__card reveal">
-          <span class="who__num">04</span>
-          <h3>Investors &amp; move-up buyers</h3>
-          <p>Rental properties, downsizing, new construction or a luxury purchase — financing built around your long-term strategy.</p>
-        </article>
+    <!-- LOANS -->
+    <section class="block" id="loans">
+      <h2 class="block__label">Loans</h2>
+      <div class="block__body">
+        <picture>
+          <source type="image/webp" srcset="/assets/house-porch-sm.webp 900w, /assets/house-porch.webp 2000w" sizes="(max-width: 860px) 100vw, 75vw">
+          <img class="wide wide--top" src="/assets/house-porch-sm.jpg" srcset="/assets/house-porch-sm.jpg 900w, /assets/house-porch.jpg 2000w" sizes="(max-width: 860px) 100vw, 75vw" alt="White two-story house with a wraparound porch and a green lawn" width="2000" height="1125" loading="lazy" decoding="async">
+        </picture>
+        <p class="statement statement--sm">The right loan depends on where you are and where you're headed. These are the ones I work with most.</p>
+        <dl class="loans">
+          <div><dt>First-time buyers</dt><dd>Low down payment options, assistance programs and a step-by-step plan.</dd></div>
+          <div><dt>FHA</dt><dd>Lower down payment and more flexible credit guidelines.</dd></div>
+          <div><dt>VA</dt><dd>For veterans, service members and eligible spouses. $0 down and no monthly mortgage insurance.</dd></div>
+          <div><dt>Refinancing</dt><dd>Lower your rate, shorten your term or take cash out. I'll show you the break-even point first.</dd></div>
+          <div><dt>Investment properties</dt><dd>Financing for rentals, structured around cash flow and long-term goals.</dd></div>
+          <div><dt>New construction</dt><dd>I coordinate with your builder and help you time your rate lock.</dd></div>
+          <div><dt>Relocation</dt><dd>Moving to or from Austin? I can get you approved before you arrive.</dd></div>
+          <div><dt>Downsizing</dt><dd>Plan the sale and the purchase together so the move goes smoothly.</dd></div>
+          <div><dt>Luxury homes</dt><dd>Jumbo and high-balance loans for higher-priced homes.</dd></div>
+        </dl>
       </div>
     </section>
 
     <!-- PROCESS -->
-    <section class="process section section--dark" id="process">
-      <div class="process__intro">
-        <p class="eyebrow eyebrow--light reveal">How it works</p>
-        <h2 class="h2 reveal">From “just looking” to <em>keys in hand</em>, in four steps.</h2>
-        <p class="reveal muted-light">No surprises, no radio silence. Here's exactly what happens and when.</p>
-      </div>
-      <ol class="process__list">
-        <li class="step reveal">
-          <span class="step__num">01</span>
-          <div>
-            <h3>Quick conversation</h3>
-            <p>15 minutes to talk goals, budget and timing. No credit pull, no pressure.</p>
-          </div>
-        </li>
-        <li class="step reveal">
-          <span class="step__num">02</span>
-          <div>
+    <section class="block block--tint" id="process">
+      <h2 class="block__label">How it works</h2>
+      <div class="block__body process">
+        <picture>
+          <source type="image/webp" srcset="/assets/living-room-sm.webp 900w, /assets/living-room.webp 1200w" sizes="(max-width: 860px) 100vw, 25vw">
+          <img class="process__img" src="/assets/living-room-sm.jpg" srcset="/assets/living-room-sm.jpg 900w, /assets/living-room.jpg 1200w" sizes="(max-width: 860px) 100vw, 25vw" alt="Bright living room with a leather sofa and plants" width="1200" height="1500" loading="lazy" decoding="async">
+        </picture>
+        <ol class="steps">
+          <li>
+            <span class="steps__n">Step 1</span>
+            <h3>A short call</h3>
+            <p>About 15 minutes on your goals, budget and timing. No credit pull.</p>
+          </li>
+          <li>
+            <span class="steps__n">Step 2</span>
             <h3>Pre-approval</h3>
-            <p>Secure online application and document upload. You'll get a pre-approval letter and a clear picture of your budget so you can shop with confidence.</p>
-          </div>
-        </li>
-        <li class="step reveal">
-          <span class="step__num">03</span>
-          <div>
-            <h3>Offer &amp; underwriting</h3>
-            <p>I talk with your agent, lock your rate at the right moment and shepherd your file through underwriting.</p>
-          </div>
-        </li>
-        <li class="step reveal">
-          <span class="step__num">04</span>
-          <div>
-            <h3>Close &amp; celebrate</h3>
-            <p>Review your final numbers with me before closing day, sign, and grab the keys. 🔑</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- LOANS -->
-    <section class="loans section" id="loans">
-      <div class="section__head">
-        <p class="eyebrow reveal">Loan programs</p>
-        <h2 class="h2 reveal">The right loan <em>for where you are.</em></h2>
-      </div>
-      <div class="loans__grid">
-        <article class="loan reveal" style="--tone: var(--peach)">
-          <span class="loan__icon">🗝️</span>
-          <h3>First-time buyers</h3>
-          <p>Low down payment options, assistance programs and a step-by-step plan so your first home feels exciting, not scary.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--sage)">
-          <span class="loan__icon">🌱</span>
-          <h3>FHA loans</h3>
-          <p>Lower down payment and more flexible credit guidelines — a great fit for many first-time and rebuilding buyers.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--sky)">
-          <span class="loan__icon">🎖️</span>
-          <h3>VA loans</h3>
-          <p>For veterans, service members and eligible spouses. $0 down and no monthly mortgage insurance.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--rose)">
-          <span class="loan__icon">🔁</span>
-          <h3>Refinancing</h3>
-          <p>Lower your rate, shorten your term or tap into equity. I'll run the break-even math so you know it's worth it.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--butter)">
-          <span class="loan__icon">📈</span>
-          <h3>Investment properties</h3>
-          <p>Financing for rentals and portfolio growth, structured around your cash flow and long-term wealth goals.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--lilac)">
-          <span class="loan__icon">🏗️</span>
-          <h3>New construction</h3>
-          <p>From lot to move-in, I'll coordinate with your builder and help you navigate rate locks and timelines.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--sky)">
-          <span class="loan__icon">📦</span>
-          <h3>Relocation</h3>
-          <p>Moving to Austin — or from it? Licensed in five states, I can help you buy before you even arrive.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--sage)">
-          <span class="loan__icon">🪴</span>
-          <h3>Downsizing</h3>
-          <p>Right-size your home and your payment. We'll plan the timing of selling and buying so the move is smooth.</p>
-        </article>
-        <article class="loan reveal" style="--tone: var(--peach)">
-          <span class="loan__icon">🏛️</span>
-          <h3>Luxury homes</h3>
-          <p>Jumbo and high-balance financing for higher-priced homes, with competitive terms and white-glove service.</p>
-        </article>
+            <p>Apply online and upload documents securely. You'll get a pre-approval letter and a clear budget to shop with.</p>
+          </li>
+          <li>
+            <span class="steps__n">Step 3</span>
+            <h3>Offer and underwriting</h3>
+            <p>I work with your agent, help you decide when to lock your rate and keep your file moving.</p>
+          </li>
+          <li>
+            <span class="steps__n">Step 4</span>
+            <h3>Closing</h3>
+            <p>We go over your final numbers together before closing day, so nothing on the table is a surprise.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
     <!-- CALCULATOR -->
-    <section class="calc section" id="calculator">
-      <div class="calc__panel reveal">
-        <div class="calc__inputs">
-          <p class="eyebrow">Payment calculator</p>
-          <h2 class="h2 h2--sm">What could your <em>monthly</em> look like?</h2>
-          <form class="calc__form" data-calc onsubmit="return false">
-            <label class="field">
-              <span class="field__top"><span>Home price</span><output data-out="price"></output></span>
-              <input type="range" name="price" min="100000" max="1500000" step="5000" value="425000">
-            </label>
-            <label class="field">
-              <span class="field__top"><span>Down payment</span><output data-out="down"></output></span>
-              <input type="range" name="down" min="0" max="50" step="1" value="10">
-            </label>
-            <label class="field">
-              <span class="field__top"><span>Interest rate</span><output data-out="rate"></output></span>
-              <input type="range" name="rate" min="2" max="10" step="0.125" value="6.5">
-            </label>
-            <fieldset class="field field--seg">
-              <legend>Loan term</legend>
-              <label><input type="radio" name="term" value="30" checked><span>30 yr</span></label>
-              <label><input type="radio" name="term" value="20"><span>20 yr</span></label>
-              <label><input type="radio" name="term" value="15"><span>15 yr</span></label>
-            </fieldset>
-          </form>
-        </div>
+    <section class="block" id="calculator">
+      <h2 class="block__label">Payment calculator</h2>
+      <div class="block__body calc">
+        <form class="calc__form" data-calc onsubmit="return false">
+          <label class="field">
+            <span class="field__top"><span>Home price</span><output data-out="price"></output></span>
+            <input type="range" name="price" min="100000" max="1500000" step="5000" value="425000">
+          </label>
+          <label class="field">
+            <span class="field__top"><span>Down payment</span><output data-out="down"></output></span>
+            <input type="range" name="down" min="0" max="50" step="1" value="10">
+          </label>
+          <label class="field">
+            <span class="field__top"><span>Interest rate</span><output data-out="rate"></output></span>
+            <input type="range" name="rate" min="2" max="10" step="0.125" value="6.5">
+          </label>
+          <fieldset class="field seg">
+            <legend>Loan term</legend>
+            <label><input type="radio" name="term" value="30" checked><span>30 years</span></label>
+            <label><input type="radio" name="term" value="20"><span>20 years</span></label>
+            <label><input type="radio" name="term" value="15"><span>15 years</span></label>
+          </fieldset>
+        </form>
         <div class="calc__result">
-          <p class="card__label">Estimated monthly payment</p>
+          <p class="calc__label">Estimated monthly payment</p>
           <p class="calc__total" data-out="total" aria-live="polite">$0</p>
-          <div class="donut" data-donut>
-            <svg viewBox="0 0 42 42" aria-hidden="true">
-              <circle class="donut__bg" cx="21" cy="21" r="15.915"/>
-              <circle class="donut__seg donut__seg--pi" cx="21" cy="21" r="15.915" data-seg="pi"/>
-              <circle class="donut__seg donut__seg--tax" cx="21" cy="21" r="15.915" data-seg="tax"/>
-              <circle class="donut__seg donut__seg--ins" cx="21" cy="21" r="15.915" data-seg="ins"/>
-              <circle class="donut__seg donut__seg--pmi" cx="21" cy="21" r="15.915" data-seg="pmi"/>
-            </svg>
+          <div class="calc__bar" aria-hidden="true">
+            <span class="c-pi" data-seg="pi"></span><span class="c-tax" data-seg="tax"></span><span class="c-ins" data-seg="ins"></span><span class="c-pmi" data-seg="pmi"></span>
           </div>
-          <ul class="legend">
-            <li><i class="sw sw--pi"></i>Principal &amp; interest<b data-out="pi"></b></li>
-            <li><i class="sw sw--tax"></i>Property tax <small>(est. 1.1%)</small><b data-out="tax"></b></li>
-            <li><i class="sw sw--ins"></i>Home insurance<b data-out="ins"></b></li>
-            <li><i class="sw sw--pmi"></i>Mortgage insurance<b data-out="pmi"></b></li>
+          <ul class="calc__legend">
+            <li><i class="c-pi"></i>Principal and interest<b data-out="pi"></b></li>
+            <li><i class="c-tax"></i>Property tax (est. 1.1%)<b data-out="tax"></b></li>
+            <li><i class="c-ins"></i>Homeowners insurance<b data-out="ins"></b></li>
+            <li><i class="c-pmi"></i>Mortgage insurance<b data-out="pmi"></b></li>
           </ul>
-          <a href="#contact" class="btn btn--accent btn--block">Get my real numbers →</a>
-          <p class="fine">For illustration only. Not a loan offer or commitment to lend. Actual rate, payment and terms depend on credit, property, loan program and market conditions.</p>
+          <a href="#contact" class="btn btn--primary btn--block">Get my real numbers</a>
+          <p class="fine">For illustration only. Not a loan offer or commitment to lend. Your actual rate, payment and terms depend on credit, property, loan program and market conditions.</p>
         </div>
       </div>
     </section>
 
-    <!-- PROMISE -->
-    <section class="love section" id="promise">
-      <div class="section__head">
-        <p class="eyebrow reveal">The standard</p>
-        <h2 class="h2 reveal">What I want every client <em>to say.</em></h2>
-      </div>
-      <div class="love__grid">
-        <figure class="quote reveal">
-          <blockquote>“Katie always finds a way.”</blockquote>
-          <figcaption>Solution-focused, even on complex files</figcaption>
-        </figure>
-        <figure class="quote quote--tall reveal">
-          <blockquote>“She helped us feel confident through one of the biggest financial decisions of our lives.”</blockquote>
-          <figcaption>Calm when things get complicated</figcaption>
-        </figure>
-        <figure class="quote reveal">
-          <blockquote>“She's honest, even when the answer isn't what we want to hear.”</blockquote>
-          <figcaption>Straight talk, always</figcaption>
-        </figure>
-        <figure class="quote reveal">
-          <blockquote>“She explains things clearly and genuinely cares about our family — not just the loan.”</blockquote>
-          <figcaption>Education first, and available when you need her</figcaption>
-        </figure>
+    <!-- STANDARD -->
+    <section class="block" id="standard">
+      <h2 class="block__label">What to expect</h2>
+      <div class="block__body">
+        <blockquote class="pull">“Katie always finds a way.”</blockquote>
+        <p class="pull__note">That's what I want every client to be able to say. Here's how I try to earn it:</p>
+        <ul class="expect">
+          <li>You'll know where your loan stands at every stage, without having to chase me for updates.</li>
+          <li>I'll give you honest answers, including the ones you might not want to hear.</li>
+          <li>I'll explain things until they make sense, and I'll stay calm when things get complicated.</li>
+          <li>I'll be reachable when you need me, especially in the final days before closing.</li>
+        </ul>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="faq section" id="faq">
-      <div class="section__head">
-        <p class="eyebrow reveal">FAQ</p>
-        <h2 class="h2 reveal">Good questions, <em>straight answers.</em></h2>
-      </div>
-      <div class="faq__list">
-        <details class="reveal">
+    <section class="block" id="faq">
+      <h2 class="block__label">Questions</h2>
+      <div class="block__body faq">
+        <details>
           <summary>Which states are you licensed in?</summary>
-          <p>I'm based in Austin and serve the greater Austin area, and I'm also licensed to lend in Minnesota, Wisconsin, Florida and California. Relocating between any of them? Even better.</p>
+          <p>I'm based in Austin and serve the greater Austin area. I'm also licensed in Minnesota, Wisconsin, Florida and California, which helps if you're relocating between any of them.</p>
         </details>
-        <details class="reveal">
+        <details>
           <summary>I'm self-employed. Can I still qualify?</summary>
-          <p>Yes. Entrepreneurs and small business owners buy homes every day — it just takes the right documentation and the right program. I'll walk you through exactly what's needed for your situation.</p>
+          <p>Yes. Business owners buy homes all the time. It takes the right documentation and the right program, and I'll tell you exactly what's needed for your situation.</p>
         </details>
-        <details class="reveal">
+        <details>
           <summary>How much do I need for a down payment?</summary>
-          <p>Less than most people think. Depending on the program, it can be 0% (VA, USDA), 3.5% (FHA) or 3% (some conventional loans). We'll also look at down payment assistance programs you may qualify for.</p>
+          <p>Usually less than people expect. Depending on the program it can be 0% (VA), 3.5% (FHA) or 3% (some conventional loans). We'll also check for down payment assistance you might qualify for.</p>
         </details>
-        <details class="reveal">
+        <details>
           <summary>Will getting pre-approved hurt my credit?</summary>
-          <p>A pre-approval involves a credit inquiry, but multiple mortgage inquiries within a short shopping window are generally treated as one. Our first conversation doesn't require a credit pull at all.</p>
+          <p>A pre-approval includes a credit inquiry, but multiple mortgage inquiries within a short shopping window are generally treated as one. Our first conversation doesn't need a credit pull at all.</p>
         </details>
-        <details class="reveal">
+        <details>
           <summary>What documents will I need?</summary>
-          <p>Typically recent pay stubs, W-2s or tax returns, bank statements and a photo ID. I'll send a personalized checklist so you only gather what you actually need.</p>
+          <p>Usually recent pay stubs, W-2s or tax returns, bank statements and a photo ID. I'll send you a checklist for your situation so you only gather what's actually needed.</p>
         </details>
-        <details class="reveal">
+        <details>
           <summary>How long does it take to close?</summary>
-          <p>Many purchase loans close in roughly 30 days from an accepted offer, depending on the loan program, appraisal and how quickly documents come in. Getting pre-approved up front keeps everything on track.</p>
+          <p>Many purchase loans close in about 30 days from an accepted offer. It depends on the program, the appraisal and how quickly documents come in. Being pre-approved up front helps a lot.</p>
         </details>
-        <details class="reveal">
+        <details>
           <summary>Is now a good time to refinance?</summary>
-          <p>It depends on your current rate, how long you plan to stay and your goals. I'll run a break-even analysis so you can see whether it actually saves you money.</p>
+          <p>It depends on your current rate, how long you plan to stay and what you're trying to accomplish. I'll run a break-even analysis so you can see whether it saves you money.</p>
         </details>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="contact section section--accent" id="contact">
-      <div class="contact__copy">
-        <p class="eyebrow eyebrow--light reveal">Let's talk</p>
-        <h2 class="h2 h2--xl reveal">Ready when <em>you are.</em></h2>
-        <p class="reveal">Whether you're buying in a year or this weekend, tell me a little about what you're planning and I'll reach out within one business day.</p>
-        <ul class="contact__direct reveal">
-          <li><span>Call / text</span><a href="tel:+15129227602">(512) 922-7602</a></li>
-          <li><span>Email</span><a href="mailto:katie.white@fairwaymc.com">katie.white@fairwaymc.com</a></li>
-        </ul>
-      </div>
-      <form class="contact__form reveal" data-contact novalidate>
-        <div class="row">
-          <label class="input"><span>Name</span><input name="name" autocomplete="name" required></label>
-          <label class="input"><span>Phone</span><input name="phone" type="tel" autocomplete="tel"></label>
+    <section class="block block--tint" id="contact">
+      <h2 class="block__label">Contact</h2>
+      <div class="block__body contact">
+        <div class="contact__info">
+          <p class="statement statement--sm">Tell me what you're planning, whether it's this month or next year. I'll get back to you within one business day.</p>
+          <dl class="direct">
+            <div><dt>Call or text</dt><dd><a href="tel:+15129227602">512-922-7602</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:katie.white@fairwaymc.com">katie.white@fairwaymc.com</a></dd></div>
+          </dl>
         </div>
-        <label class="input"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
-        <fieldset class="pills">
-          <legend>I'm looking to…</legend>
-          <label><input type="radio" name="goal" value="Buy my first home" checked><span>Buy my first home</span></label>
-          <label><input type="radio" name="goal" value="Buy a new home"><span>Buy a new home</span></label>
-          <label><input type="radio" name="goal" value="Refinance"><span>Refinance</span></label>
-          <label><input type="radio" name="goal" value="Buy an investment property"><span>Invest</span></label>
-          <label><input type="radio" name="goal" value="Just exploring"><span>Just exploring</span></label>
-        </fieldset>
-        <label class="input"><span>Anything else? <small>(optional)</small></span><textarea name="message" rows="3"></textarea></label>
-        <!-- honeypot -->
-        <label class="hp" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off"></label>
-        <button class="btn btn--dark btn--block" type="submit">Send it to Katie →</button>
-        <p class="form__status" role="status" data-status></p>
-      </form>
+        <form class="form" data-contact novalidate>
+          <div class="form__row">
+            <label class="input"><span>Name</span><input name="name" autocomplete="name" required></label>
+            <label class="input"><span>Phone</span><input name="phone" type="tel" autocomplete="tel"></label>
+          </div>
+          <label class="input"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+          <label class="input"><span>I'm looking to</span>
+            <select name="goal">
+              <option>Buy my first home</option>
+              <option>Buy a new home</option>
+              <option>Refinance</option>
+              <option>Buy an investment property</option>
+              <option>Build a new home</option>
+              <option>Just exploring</option>
+            </select>
+          </label>
+          <label class="input"><span>Anything else? (optional)</span><textarea name="message" rows="4"></textarea></label>
+          <!-- honeypot -->
+          <label class="hp" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off"></label>
+          <button class="btn btn--primary" type="submit">Send</button>
+          <p class="form__status" role="status" data-status></p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__big" aria-hidden="true">Katie White</div>
-    <div class="footer__cols">
+  <footer class="foot">
+    <div class="foot__cols">
       <div>
-        <p><strong>Katie White</strong>, Branch Manager &amp; Mortgage Loan Officer · NMLS #848270</p>
-        <p>Fairway Independent Mortgage Corporation · NMLS #2289</p>
-        <p>Austin, TX · Licensed in TX, MN, WI, FL &amp; CA</p>
+        <p class="foot__name">Katie White</p>
+        <p>Branch Manager &amp; Mortgage Loan Officer, NMLS #848270</p>
+        <p>Fairway Independent Mortgage Corporation, NMLS #2289</p>
+        <p>Austin, TX. Licensed in TX, MN, WI, FL and CA.</p>
       </div>
-      <div class="footer__links">
+      <div class="foot__links">
+        <a href="tel:+15129227602">512-922-7602</a>
+        <a href="mailto:katie.white@fairwaymc.com">katie.white@fairwaymc.com</a>
         <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/848270" target="_blank" rel="noopener">NMLS Consumer Access</a>
-        <a href="#top">Back to top ↑</a>
       </div>
     </div>
-    <p class="footer__legal">
-      <span class="eho" aria-label="Equal Housing Opportunity">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3 2 10h3v10h14V10h3L12 3Zm-4 9h8v2H8v-2Zm0 4h8v2H8v-2Z" fill="currentColor"/></svg>
+    <p class="foot__legal">
+      <span class="eho">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3 2 10h3v10h14V10h3L12 3Zm-4 9h8v2H8v-2Zm0 4h8v2H8v-2Z" fill="currentColor"/></svg>
         Equal Housing Opportunity
       </span>
-      This is not a commitment to lend. All loans subject to credit approval, underwriting guidelines and property eligibility. Programs, rates, terms and conditions are subject to change without notice.
-      © <span data-year>2026</span> Katie White.
+      This is not a commitment to lend. All loans are subject to credit approval, underwriting guidelines and property eligibility. Programs, rates, terms and conditions are subject to change without notice.
+      &copy; <span data-year>2026</span> Katie White.
     </p>
   </footer>
 

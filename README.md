@@ -7,7 +7,7 @@ index.html        page markup
 styles.css        all styles
 script.js         nav, scroll reveals, payment calculator, contact form
 api/contact.js    POST /api/contact → emails leads via Resend
-assets/           favicon (add Katie's photo here)
+assets/           Katie's headshot, stock photos, favicon
 vercel.json       clean URLs, security + cache headers
 ```
 
@@ -45,3 +45,13 @@ Content comes from Katie's onboarding answers: Austin-based branch manager, lice
 The "What I want every client to say" section uses her own standards, written as goals rather than attributed reviews.
 Once she has real client reviews (Google, Zillow, Experience.com), they can replace or sit alongside it.
 Her home shipping address from the intake form is deliberately left off the site.
+
+## Photo credits
+
+Stock photos are from Unsplash (free to use under the Unsplash License, no attribution required):
+
+- `austin.*`: Austin skyline (images.unsplash.com/photo-1588993608283-7f0eda4438be)
+- `house-porch.*`: house with wraparound porch (images.unsplash.com/photo-1570129477492-45c003edd2be)
+- `living-room.*`: living room (images.unsplash.com/photo-1554995207-c18c203602cb)
+
+Swap any of them for local Austin photography whenever you have it. Keep the same filenames and the 21:9, 16:9 and 4:5 crops.

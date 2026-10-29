@@ -1,48 +1,33 @@
 (() => {
-  document.documentElement.classList.add("js");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
-  // Footer year
   $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 
-  // ---------- Nav: shadow on scroll, hide on scroll down ----------
+  // ---------- Header border on scroll ----------
   const nav = $("[data-nav]");
-  let lastY = window.scrollY;
-  window.addEventListener(
-    "scroll",
-    () => {
-      const y = window.scrollY;
-      nav.classList.toggle("is-scrolled", y > 20);
-      nav.classList.toggle("is-hidden", y > lastY && y > 400 && !menuOpen());
-      lastY = y;
-    },
-    { passive: true }
-  );
+  const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 8);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 
   // ---------- Mobile menu ----------
   const toggle = $("[data-menu-toggle]");
   const menu = $("[data-menu]");
-  const menuOpen = () => !menu.hidden;
   const setMenu = (open) => {
     menu.hidden = !open;
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-    document.body.style.overflow = open ? "hidden" : "";
+    toggle.textContent = open ? "Close" : "Menu";
   };
-  toggle.addEventListener("click", () => setMenu(!menuOpen()));
+  toggle.addEventListener("click", () => setMenu(menu.hidden));
   menu.addEventListener("click", (e) => e.target.closest("a") && setMenu(false));
-  document.addEventListener("keydown", (e) => e.key === "Escape" && menuOpen() && setMenu(false));
+  document.addEventListener("keydown", (e) => e.key === "Escape" && !menu.hidden && setMenu(false));
 
-  // ---------- Reveal on scroll ----------
-  const reveals = $$(".reveal");
-  // Stagger siblings that reveal together
-  reveals.forEach((el) => {
-    const sibs = [...el.parentElement.children].filter((c) => c.classList.contains("reveal"));
-    el.style.setProperty("--d", `${Math.min(sibs.indexOf(el), 6) * 0.08}s`);
-  });
+  // ---------- Fade sections in once ----------
   if ("IntersectionObserver" in window && !reduceMotion) {
+    document.documentElement.classList.add("js");
+    const blocks = $$(".block__body");
+    blocks.forEach((el) => el.classList.add("fade"));
     const io = new IntersectionObserver(
       (entries) =>
         entries.forEach((entry) => {
@@ -51,47 +36,9 @@
             io.unobserve(entry.target);
           }
         }),
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { rootMargin: "0px 0px -10% 0px" }
     );
-    reveals.forEach((el) => io.observe(el));
-  } else {
-    reveals.forEach((el) => el.classList.add("is-in"));
-  }
-
-  // ---------- Count-up stats ----------
-  const counters = $$("[data-count]");
-  if (!reduceMotion && "IntersectionObserver" in window) {
-    const co = new IntersectionObserver((entries) =>
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        const end = Number(el.dataset.count);
-        const suffix = el.dataset.suffix || "";
-        const start = performance.now();
-        const tick = (now) => {
-          const t = Math.min((now - start) / 1400, 1);
-          const eased = 1 - Math.pow(1 - t, 3);
-          el.textContent = Math.round(end * eased) + suffix;
-          if (t < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
-        co.unobserve(el);
-      })
-    );
-    counters.forEach((el) => co.observe(el));
-  }
-
-  // ---------- Hero card tilt ----------
-  const stack = $("[data-tilt]");
-  if (stack && !reduceMotion && window.matchMedia("(pointer: fine)").matches) {
-    const area = stack.parentElement;
-    area.addEventListener("pointermove", (e) => {
-      const r = area.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width - 0.5;
-      const y = (e.clientY - r.top) / r.height - 0.5;
-      stack.style.transform = `rotateY(${x * 10}deg) rotateX(${-y * 10}deg)`;
-    });
-    area.addEventListener("pointerleave", () => (stack.style.transform = ""));
+    blocks.forEach((el) => io.observe(el));
   }
 
   // ---------- Mortgage calculator ----------
@@ -125,7 +72,7 @@
       const total = pi + tax + ins + pmi;
 
       out("price").textContent = money.format(price);
-      out("down").textContent = `${downPct}% · ${money.format(price * (downPct / 100))}`;
+      out("down").textContent = `${downPct}% (${money.format(price * (downPct / 100))})`;
       out("rate").textContent = `${rate.toFixed(3).replace(/0+$/, "").replace(/\.$/, "")}%`;
       out("total").textContent = money.format(total);
       out("pi").textContent = money.format(pi);
@@ -133,14 +80,8 @@
       out("ins").textContent = money.format(ins);
       out("pmi").textContent = money.format(pmi);
 
-      // Donut segments (circumference normalised to 100)
-      let offset = 0;
       [["pi", pi], ["tax", tax], ["ins", ins], ["pmi", pmi]].forEach(([key, val]) => {
-        const seg = $(`[data-seg="${key}"]`);
-        const len = total ? (val / total) * 100 : 0;
-        seg.style.strokeDasharray = `${len} ${100 - len}`;
-        seg.style.strokeDashoffset = String(-offset);
-        offset += len;
+        $(`[data-seg="${key}"]`).style.width = `${total ? (val / total) * 100 : 0}%`;
       });
 
       $$('input[type="range"]', calc).forEach(fillRange);
@@ -175,7 +116,7 @@
       if (!valid) return setStatus("Please add your name and a valid email.", "err");
 
       button.disabled = true;
-      setStatus("Sending…");
+      setStatus("Sending...");
       try {
         const res = await fetch("/api/contact", {
           method: "POST",
@@ -184,10 +125,9 @@
         });
         if (!res.ok) throw new Error(String(res.status));
         form.reset();
-        setStatus("Thanks! Katie will be in touch within one business day. 🎉", "ok");
+        setStatus("Thanks. Katie will be in touch within one business day.", "ok");
       } catch {
-        const mail = $('.contact__direct a[href^="mailto:"]');
-        setStatus(`Something went wrong sending your message. Please email ${mail ? mail.textContent : "Katie"} directly.`, "err");
+        setStatus("Something went wrong sending your message. Please call or email Katie directly.", "err");
       } finally {
         button.disabled = false;
       }
