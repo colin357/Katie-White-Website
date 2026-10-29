@@ -63,7 +63,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
   transition: box-shadow 0.3s;
 }
 .top.is-scrolled .top__inner { box-shadow: 0 12px 36px -18px rgba(27, 26, 23, 0.35); }
-.top__name { font-weight: 700; font-size: 18px; text-decoration: none; letter-spacing: -0.01em; margin-right: auto; display: flex; align-items: center; gap: 10px; }
+.top__name { font-weight: 700; font-size: 18px; text-decoration: none; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
+.top__logo { display: flex; align-items: center; padding-left: 20px; border-left: 1px solid var(--line); margin-left: -16px; margin-right: auto; }
+.top__logo img { height: 34px; width: auto; }
 .top__mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; background: var(--forest); color: var(--bg); font: italic 400 18px/1 var(--serif); }
 .top__links { display: flex; gap: 28px; font-size: 15px; }
 .top__links a, .top__phone { text-decoration: none; color: var(--muted); }
@@ -77,6 +79,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .menu a:last-child { border-bottom: 0; }
 @media (max-width: 960px) {
   .top__links, .top__phone { display: none; }
+  .top__name { margin-right: auto; }
+  .top__logo { display: none; }
   .top__toggle { display: block; }
 }
 
@@ -318,6 +322,8 @@ input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border-radius
 .foot__cols { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
 .foot__cols p { margin: 0 0 4px; }
 .foot__big { font: italic 300 clamp(64px, 16vw, 230px)/0.85 var(--serif); letter-spacing: -0.05em; color: var(--forest); margin-bottom: 48px; white-space: nowrap; }
+.foot__logo { display: block; margin-bottom: 18px; }
+.foot__logo img { height: 66px; width: auto; }
 .foot__brand { color: var(--ink); font-weight: 700; font-size: 17px; }
 .foot__links { display: flex; flex-direction: column; gap: 4px; }
 .foot__links a { text-decoration: none; }
