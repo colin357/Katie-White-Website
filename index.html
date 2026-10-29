@@ -83,14 +83,18 @@
 
     <!-- ABOUT -->
     <section class="block" id="about">
-      <h2 class="block__label">About</h2>
+      <div class="block__rail">
+        <p class="block__label">About</p>
+        <h2 class="block__title">Meet Katie</h2>
+      </div>
       <div class="block__body">
         <p class="statement">
           Most people come to me a little overwhelmed. Do I qualify? Is my credit good enough?
           How much do I need saved? Am I making the right call? Those are good questions, and
           you should get straight answers to them.
         </p>
-        <div class="cols">
+        <div class="about">
+          <div class="about__text">
           <p>
             I run a small team out of Austin, and I'm licensed to lend in Texas, Minnesota,
             Wisconsin, Florida and California. Most of my clients are busy. They're running
@@ -103,6 +107,11 @@
             A home is one of the best tools families have for building long-term wealth, and
             I want you to go into it knowing exactly what you're signing.
           </p>
+          </div>
+          <picture>
+          <source type="image/webp" srcset="/assets/keys-sm.webp 700w, /assets/keys.webp 1200w" sizes="(max-width: 700px) 100vw, 30vw">
+          <img class="about__img" src="/assets/keys-sm.jpg" srcset="/assets/keys-sm.jpg 700w, /assets/keys.jpg 1200w" sizes="(max-width: 700px) 100vw, 30vw" alt="House keys next to a small model house" width="1200" height="1500" loading="lazy" decoding="async">
+        </picture>
         </div>
         <dl class="facts">
           <div><dt>Based in</dt><dd>Austin, TX</dd></div>
@@ -115,22 +124,34 @@
 
     <!-- WHO -->
     <section class="block" id="who">
-      <h2 class="block__label">Who I work with</h2>
-      <div class="block__body">
+      <div class="block__rail">
+        <p class="block__label">Who I work with</p>
+        <h2 class="block__title">Busy people with big plans</h2>
+        <p class="block__intro">Careers, kids, businesses and investments. I plan the loan around your life, not the other way around.</p>
+      </div>
+      <div class="block__body who-wrap">
+        <picture>
+          <source type="image/webp" srcset="/assets/family-sm.webp 700w, /assets/family.webp 1200w" sizes="(max-width: 860px) 100vw, 25vw">
+          <img class="who__img" src="/assets/family-sm.jpg" srcset="/assets/family-sm.jpg 700w, /assets/family.jpg 1200w" sizes="(max-width: 860px) 100vw, 25vw" alt="A smiling dad carrying his two young kids outside their home" width="1200" height="1500" loading="lazy" decoding="async">
+        </picture>
         <ul class="who">
           <li>
+            <svg class="who__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v11H4z"/><path d="M9 8V5h6v3"/><path d="M4 13h16"/></svg>
             <h3>Entrepreneurs and business owners</h3>
             <p>Self-employed income takes different paperwork. I know what underwriters look for and which programs work best when your pay doesn't come on a W-2.</p>
           </li>
           <li>
+            <svg class="who__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M12 17.5s-3-1.8-3-3.7a1.6 1.6 0 0 1 3-.8 1.6 1.6 0 0 1 3 .8c0 1.9-3 3.7-3 3.7z"/></svg>
             <h3>Parents and growing families</h3>
             <p>More bedrooms, a specific school zone, or a move to another state. We'll plan the loan around your family's timeline.</p>
           </li>
           <li>
+            <svg class="who__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg>
             <h3>Young professionals</h3>
             <p>If you're ready to stop renting, we'll work out what you can afford, how much you need saved and what to do first.</p>
           </li>
           <li>
+            <svg class="who__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 15l4-4 3 3 5-6"/><path d="M15 8h4v4"/></svg>
             <h3>Investors and move-up buyers</h3>
             <p>Rental properties, downsizing, building new or buying at the high end. Financing that fits the bigger plan.</p>
           </li>
@@ -138,15 +159,33 @@
       </div>
     </section>
 
+    <!-- CTA -->
+    <section class="cta-band">
+      <picture>
+          <source type="image/webp" srcset="/assets/house-brick-sm.webp 900w, /assets/house-brick.webp 2000w" sizes="100vw">
+          <img class="cta-band__img" src="/assets/house-brick-sm.jpg" srcset="/assets/house-brick-sm.jpg 900w, /assets/house-brick.jpg 2000w" sizes="100vw" alt="" width="2000" height="857" loading="lazy" decoding="async">
+        </picture>
+      <div class="cta-band__inner">
+        <p class="cta-band__text">Not sure which loan fits? Let's talk it through.</p>
+        <div class="cta-band__btns">
+          <a href="https://fairway.tidalwave.ai/signup/katie.white/D8U0HC3DPERDNCJ565PG" target="_blank" rel="noopener" class="btn btn--light">Start my application</a>
+          <a href="tel:+15129227602" class="btn btn--ghost-light">Call 512-922-7602</a>
+        </div>
+      </div>
+    </section>
+
     <!-- LOANS -->
     <section class="block" id="loans">
-      <h2 class="block__label">Loans</h2>
+      <div class="block__rail">
+        <p class="block__label">Loans</p>
+        <h2 class="block__title">Loans I specialize in</h2>
+        <p class="block__intro">The right loan depends on where you are and where you're headed. These are the ones I work with most.</p>
+      </div>
       <div class="block__body">
         <picture>
           <source type="image/webp" srcset="/assets/house-porch-sm.webp 900w, /assets/house-porch.webp 2000w" sizes="(max-width: 860px) 100vw, 75vw">
           <img class="wide wide--top" src="/assets/house-porch-sm.jpg" srcset="/assets/house-porch-sm.jpg 900w, /assets/house-porch.jpg 2000w" sizes="(max-width: 860px) 100vw, 75vw" alt="White two-story house with a wraparound porch and a green lawn" width="2000" height="1125" loading="lazy" decoding="async">
         </picture>
-        <p class="statement statement--sm">The right loan depends on where you are and where you're headed. These are the ones I work with most.</p>
         <dl class="loans">
           <div><dt>First-time buyers</dt><dd>Low down payment options, assistance programs and a step-by-step plan.</dd></div>
           <div><dt>FHA</dt><dd>Lower down payment and more flexible credit guidelines.</dd></div>
@@ -163,7 +202,10 @@
 
     <!-- PROCESS -->
     <section class="block block--dark" id="process">
-      <h2 class="block__label">How it works</h2>
+      <div class="block__rail">
+        <p class="block__label">How it works</p>
+        <h2 class="block__title">Four steps to the keys</h2>
+      </div>
       <div class="block__body process">
         <picture>
           <source type="image/webp" srcset="/assets/living-room-sm.webp 900w, /assets/living-room.webp 1200w" sizes="(max-width: 860px) 100vw, 25vw">
@@ -196,7 +238,11 @@
 
     <!-- CALCULATOR -->
     <section class="block" id="calculator">
-      <h2 class="block__label">Payment calculator</h2>
+      <div class="block__rail">
+        <p class="block__label">Payment calculator</p>
+        <h2 class="block__title">Run the numbers</h2>
+        <p class="block__intro">Move the sliders to see an estimated monthly payment, including taxes and insurance.</p>
+      </div>
       <div class="block__body calc">
         <form class="calc__form" data-calc onsubmit="return false">
           <label class="field">
@@ -238,7 +284,10 @@
 
     <!-- STANDARD -->
     <section class="block" id="standard">
-      <h2 class="block__label">What to expect</h2>
+      <div class="block__rail">
+        <p class="block__label">What to expect</p>
+        <h2 class="block__title">My promise to you</h2>
+      </div>
       <div class="block__body">
         <blockquote class="pull">“Katie always finds a way.”</blockquote>
         <p class="pull__note">That's what I want every client to be able to say. Here's how I try to earn it:</p>
@@ -253,7 +302,11 @@
 
     <!-- FAQ -->
     <section class="block" id="faq">
-      <h2 class="block__label">Questions</h2>
+      <div class="block__rail">
+        <p class="block__label">Questions</p>
+        <h2 class="block__title">Common questions</h2>
+        <p class="block__intro">Don't see yours? Call or text <a href="tel:+15129227602">512-922-7602</a>.</p>
+      </div>
       <div class="block__body faq">
         <details>
           <summary>Which states are you licensed in?</summary>
@@ -288,7 +341,10 @@
 
     <!-- CONTACT -->
     <section class="block block--tint" id="contact">
-      <h2 class="block__label">Contact</h2>
+      <div class="block__rail">
+        <p class="block__label">Contact</p>
+        <h2 class="block__title">Let's talk</h2>
+      </div>
       <div class="block__body contact">
         <div class="contact__info">
           <p class="statement statement--sm">Tell me what you're planning, whether it's this month or next year. I'll get back to you within one business day.</p>

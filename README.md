@@ -53,5 +53,8 @@ Stock photos are from Unsplash (free to use under the Unsplash License, no attri
 - `austin.*`: Austin skyline (images.unsplash.com/photo-1588993608283-7f0eda4438be)
 - `house-porch.*`: house with wraparound porch (images.unsplash.com/photo-1570129477492-45c003edd2be)
 - `living-room.*`: living room (images.unsplash.com/photo-1554995207-c18c203602cb)
+- `keys.*`: keys and model house (images.unsplash.com/photo-1560518883-ce09059eeffa)
+- `family.*`: dad with kids (images.unsplash.com/photo-1609220136736-443140cffec6)
+- `house-brick.*`: brick house, CTA background (images.unsplash.com/photo-1592595896551-12b371d546d5)
 
 Swap any of them for local Austin photography whenever you have it. Keep the same filenames and the 21:9, 16:9 and 4:5 crops.
