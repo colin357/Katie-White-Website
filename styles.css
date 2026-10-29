@@ -57,6 +57,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .top__links a, .top__phone { text-decoration: none; color: var(--muted); }
 .top__links a:hover, .top__phone:hover { color: var(--ink); }
 .top__phone { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.top__apply { padding: 8px 18px; font-size: 15px; }
 .top__toggle { display: none; background: none; border: 1px solid var(--ink); border-radius: 2px; padding: 6px 14px; font-size: 15px; font-weight: 600; cursor: pointer; }
 .menu { border-top: 1px solid var(--line); padding: 8px var(--gutter) 24px; display: flex; flex-direction: column; }
 .menu[hidden] { display: none; }

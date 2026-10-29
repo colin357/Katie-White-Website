@@ -37,7 +37,7 @@ Done: Katie's NMLS #848270, Fairway Independent Mortgage Corporation NMLS #2289,
 
 Still open:
 
-- Optional: an online application link for the "Start my pre-approval" buttons (they currently scroll to the contact form)
+- Done: application link (Tidalwave) on the header Apply button, hero, calculator and contact section
 - Fairway compliance review of the disclosures and loan program copy (they may require specific footer language or a branch address)
 - Set `CONTACT_TO_EMAIL=katie.white@fairwaymc.com` in Vercel so form leads reach her
 
