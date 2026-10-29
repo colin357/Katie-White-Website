@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Katie White | Mortgage Loan Officer in Austin, TX</title>
   <meta name="description" content="Katie White is a branch manager and mortgage loan officer with Fairway Independent Mortgage in Austin, TX, helping buyers and homeowners in TX, MN, WI, FL and CA. NMLS #848270.">
-  <meta name="theme-color" content="#fbfaf7">
+  <meta name="theme-color" content="#f6f1e8">
   <meta property="og:title" content="Katie White | Mortgage Loan Officer in Austin, TX">
   <meta property="og:description" content="Know your numbers before you fall in love with a house. Pre-approvals, purchase loans and refinancing with Katie White.">
   <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
   <link rel="preload" as="image" href="/assets/katie.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
 
   <header class="top" data-nav>
     <div class="top__inner">
-      <a href="#top" class="top__name">Katie White</a>
+      <a href="#top" class="top__name"><span class="top__mark" aria-hidden="true">kw</span>Katie White</a>
       <nav class="top__links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#loans">Loans</a>
@@ -52,7 +52,7 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero__text">
-        <h1>Know <span class="mark">your numbers</span> before you fall in love with a house.</h1>
+        <h1>Know your numbers before you fall in love with a <em>house.</em></h1>
         <p class="hero__lede">
           I'm Katie White, a loan officer and branch manager at Fairway in Austin.
           I'll show you what you qualify for, what it will really cost each month,
@@ -69,9 +69,25 @@
           <img src="/assets/katie.jpg" srcset="/assets/katie-sm.jpg 700w, /assets/katie.jpg 1200w" sizes="(max-width: 860px) 100vw, 44vw" alt="Portrait of Katie White" width="1200" height="1500" fetchpriority="high">
         </picture>
         <span class="hero__tag">Licensed in TX, MN, WI, FL &amp; CA</span>
+        <div class="float float--pay" aria-hidden="true">
+          <span class="float__label">Est. monthly payment</span>
+          <span class="float__big">$2,418<small>/mo</small></span>
+          <span class="float__bars"><i style="--h:100%"></i><i style="--h:52%"></i><i style="--h:34%"></i><i style="--h:22%"></i></span>
+        </div>
+        <div class="float float--note" aria-hidden="true">
+          <img src="/assets/katie-avatar.jpg" alt="" width="36" height="36">
+          <span>“Appraisal came back great. You're clear to close Friday!”</span>
+        </div>
         <figcaption>Katie White, Branch Manager<br>Fairway Independent Mortgage</figcaption>
       </figure>
     </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>First-time buyers</span><i>✦</i><span>FHA</span><i>✦</i><span>VA</span><i>✦</i><span>Refinancing</span><i>✦</i><span>Investment properties</span><i>✦</i><span>New construction</span><i>✦</i><span>Relocation</span><i>✦</i><span>Downsizing</span><i>✦</i><span>Luxury homes</span><i>✦</i>
+        <span>First-time buyers</span><i>✦</i><span>FHA</span><i>✦</i><span>VA</span><i>✦</i><span>Refinancing</span><i>✦</i><span>Investment properties</span><i>✦</i><span>New construction</span><i>✦</i><span>Relocation</span><i>✦</i><span>Downsizing</span><i>✦</i><span>Luxury homes</span><i>✦</i>
+      </div>
+    </div>
 
     <figure class="band">
         <picture>
@@ -340,7 +356,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="block block--tint" id="contact">
+    <section class="block block--accent" id="contact">
       <div class="block__rail">
         <p class="block__label">Contact</p>
         <h2 class="block__title">Let's talk</h2>
@@ -381,9 +397,10 @@
   </main>
 
   <footer class="foot">
+    <div class="foot__big" aria-hidden="true">Katie White</div>
     <div class="foot__cols">
       <div>
-        <p class="foot__name">Katie White</p>
+        <p class="foot__brand">Katie White</p>
         <p>Branch Manager &amp; Mortgage Loan Officer, NMLS #848270</p>
         <p>Fairway Independent Mortgage Corporation, NMLS #2289</p>
         <p>Austin, TX. Licensed in TX, MN, WI, FL and CA.</p>
