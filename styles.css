@@ -8,7 +8,7 @@
   --muted: #59554e;
   --line: rgba(27, 26, 23, 0.12);
   --forest: #1d3b2f;
-  --accent: #d65f3b;
+  --accent: #5f2b98;
   --highlight: #f4dc8c;
   --c-pi: #1f3d33;
   --c-tax: #c4553b;
@@ -111,6 +111,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .hero__bg::after { background: rgba(245, 239, 228, 0.8); }
   .hero__photo { max-width: 480px; }
   .hero__photo img { aspect-ratio: 1 / 1; }
+  .hero__text { text-align: center; }
+  .hero h1, .hero__lede { margin-inline: auto; }
+  .hero__ctas { justify-content: center; }
+  .hero__photo { margin-inline: auto; text-align: center; }
 }
 
 /* ---------- Marquee ---------- */
@@ -158,7 +162,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .block--accent .statement { color: #fff; }
 .block--accent .direct div { border-top-color: rgba(255, 255, 255, 0.3); }
 .block--accent .direct dt { color: rgba(255, 255, 255, 0.78); }
-.block--accent .form { background: var(--paper); color: var(--ink); padding: clamp(22px, 3vw, 36px); border-radius: var(--radius); box-shadow: 0 40px 80px -40px rgba(80, 20, 0, 0.55); }
+.block--accent .form { background: var(--paper); color: var(--ink); padding: clamp(22px, 3vw, 36px); border-radius: var(--radius); box-shadow: 0 40px 80px -40px rgba(30, 10, 60, 0.55); }
 .block__rail { align-self: start; position: sticky; top: 96px; }
 .block__title { font-family: var(--serif); font-variation-settings: "opsz" 144; font-size: clamp(32px, 3.2vw, 48px); line-height: 1.02; letter-spacing: -0.025em; font-weight: 400; margin-bottom: 16px; max-width: 10ch; }
 .block__intro { color: var(--muted); font-size: 16px; max-width: 26ch; margin: 0; }
